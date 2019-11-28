@@ -22,12 +22,12 @@ class School
 
   def add_student(student_name,grade)
     
-#    if @roster.include?(grade) 
-#        @roster[grade] << student_name
-#    else
+    if @roster.include?(grade) 
+        @roster[grade] << student_name
+    else
         @roster[grade] ||= []
         @roster[grade] << student_name  
-#    end
+    end
   end
   
   def sort
